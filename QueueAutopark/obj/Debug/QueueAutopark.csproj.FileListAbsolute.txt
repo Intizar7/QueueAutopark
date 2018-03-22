@@ -1,0 +1,10 @@
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\bin\Debug\QueueAutopark.exe.config
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\bin\Debug\QueueAutopark.exe
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\bin\Debug\QueueAutopark.pdb
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\obj\Debug\QueueAutopark.csprojResolveAssemblyReference.cache
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\obj\Debug\QueueAutopark.Form1.resources
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\obj\Debug\QueueAutopark.Properties.Resources.resources
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\obj\Debug\QueueAutopark.csproj.GenerateResource.Cache
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\obj\Debug\QueueAutopark.csproj.CoreCompileInputs.cache
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\obj\Debug\QueueAutopark.exe
+C:\Users\gulin\source\repos\QueueAutopark\QueueAutopark\obj\Debug\QueueAutopark.pdb
