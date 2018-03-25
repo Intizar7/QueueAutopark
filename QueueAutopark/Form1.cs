@@ -27,9 +27,13 @@ namespace QueueAutopark
             txtPriorityQueue.Text = App.getPrioritizedCarListOutput();
 
             // TODO: araç sayısını göstermek için label oluştur ve aşağıdaki sonucu oraya yazdır
-            lblTotalCarNumber.Text = App.getTotalCarsOutput();
-           
+            lblTotalCar.Text = App.getTotalCars();
+
+            lblNormalTotalWaitingPeriod.Text = App.getNormalTotalWaitingPeriodTime();
+            lblPrioritizedTotalWaitingPeriod.Text = App.getPrioritizedTotalWaitingPeriodTime();
+
 
         }
+
     }
 }

@@ -11,31 +11,45 @@ namespace QueueAutopark
         static bool creation_done = false;
 
         static Random r = new Random();
-        static List<Car> carList = new List<Car>();
 
         static NormalQueue queue = new NormalQueue();
         static PrioritizedQueue pqueue = new PrioritizedQueue();
 
         public static void run()
         {
+            // check if algorithm was already runned
             if (creation_done)
                 return;
 
+            // get random car size between 10 and 20
             int carsize = r.Next(10, 20);
 
+            // create car objects and add list after updating each as many as "carsize"
             for (int i = 0; i < carsize; i++)
             {
 
                 Car new_car = new Car();
-                new_car.WaitingPeriod = r.Next(10, 300);
-                new_car.CarNumber = Numerator.getNo();
+                Car xnew_car = new Car();
+                xnew_car.InitialWaitingPeriod = new_car.InitialWaitingPeriod = r.Next(10, 300);
+                xnew_car.CarNumber = new_car.CarNumber = Numerator.getNo();
 
                 queue.Insert(new_car);
-                pqueue.Insert(new_car);
+                pqueue.Insert(xnew_car);
 
             }
 
+            // set the algorith is runned
             creation_done = true;
+        }
+
+        internal static string getPrioritizedTotalWaitingPeriodTime()
+        {
+            return pqueue.getTotalWaitingPeriod().ToString();
+        }
+
+        internal static string getNormalTotalWaitingPeriodTime()
+        {
+            return queue.getTotalWaitingPeriod().ToString();
         }
 
         public static string getCarListOutput(List<Car> list)
@@ -44,7 +58,7 @@ namespace QueueAutopark
 
             foreach (var car in list)
             {
-                output += "Araç: " + car.CarNumber + " Bekleme Süresi: " + car.WaitingPeriod + Environment.NewLine;
+                output += "Araç: " + car.CarNumber + " - BB: "+car.InitialWaitingPeriod+" - TB: " + car.WaitingPeriod + Environment.NewLine;
             }
 
             return output;
@@ -60,9 +74,9 @@ namespace QueueAutopark
             return getCarListOutput(pqueue.GetList());
         }
 
-        public static string getTotalCarsOutput()
+        public static string getTotalCars()
         {
-            return "Toplam araç: " + queue.Count();
+            return queue.Count().ToString();
         }
     }
 }

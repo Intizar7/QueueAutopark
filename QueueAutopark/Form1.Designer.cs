@@ -33,27 +33,30 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblTotalProcess = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblTotalPriorityQueue = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblNormalTotalWaitingPeriod = new System.Windows.Forms.Label();
             this.txtCarlist = new System.Windows.Forms.TextBox();
             this.txtPriorityQueue = new System.Windows.Forms.TextBox();
-            this.txtReversePriQueue = new System.Windows.Forms.TextBox();
-            this.txtGain = new System.Windows.Forms.TextBox();
-            this.lblTotalCarNumber = new System.Windows.Forms.Label();
+            this.lblTotalCar = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblNormalAverageWaitingPeriod = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblPrioritizedAverageWaitingPeriod = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblPrioritizedTotalWaitingPeriod = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEnterCarNoEnter
             // 
-            this.btnEnterCarNoEnter.Location = new System.Drawing.Point(491, 464);
+            this.btnEnterCarNoEnter.Location = new System.Drawing.Point(563, 290);
             this.btnEnterCarNoEnter.Name = "btnEnterCarNoEnter";
-            this.btnEnterCarNoEnter.Size = new System.Drawing.Size(75, 23);
+            this.btnEnterCarNoEnter.Size = new System.Drawing.Size(75, 28);
             this.btnEnterCarNoEnter.TabIndex = 0;
-            this.btnEnterCarNoEnter.Text = "Enter";
+            this.btnEnterCarNoEnter.Text = "Start";
             this.btnEnterCarNoEnter.UseVisualStyleBackColor = true;
             this.btnEnterCarNoEnter.Click += new System.EventHandler(this.btnEnterCarNoEnter_Click);
             // 
@@ -72,9 +75,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Cars List :";
+            this.label2.Text = "Normal Queue :";
             // 
             // label3
             // 
@@ -85,59 +88,23 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Priority Queue :";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(841, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Gain :";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(377, 48);
+            this.label5.Location = new System.Drawing.Point(561, 170);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 13);
+            this.label5.Size = new System.Drawing.Size(109, 13);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Total Process :";
+            this.label5.Text = "Total Waiting Period :";
             // 
-            // lblTotalProcess
+            // lblNormalTotalWaitingPeriod
             // 
-            this.lblTotalProcess.AutoSize = true;
-            this.lblTotalProcess.Location = new System.Drawing.Point(461, 48);
-            this.lblTotalProcess.Name = "lblTotalProcess";
-            this.lblTotalProcess.Size = new System.Drawing.Size(19, 13);
-            this.lblTotalProcess.TabIndex = 12;
-            this.lblTotalProcess.Text = "00";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(376, 81);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Total Priority Queue :";
-            // 
-            // lblTotalPriorityQueue
-            // 
-            this.lblTotalPriorityQueue.AutoSize = true;
-            this.lblTotalPriorityQueue.Location = new System.Drawing.Point(488, 81);
-            this.lblTotalPriorityQueue.Name = "lblTotalPriorityQueue";
-            this.lblTotalPriorityQueue.Size = new System.Drawing.Size(19, 13);
-            this.lblTotalPriorityQueue.TabIndex = 14;
-            this.lblTotalPriorityQueue.Text = "00";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(565, 107);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Reverse Priority Queue  :";
+            this.lblNormalTotalWaitingPeriod.AutoSize = true;
+            this.lblNormalTotalWaitingPeriod.Location = new System.Drawing.Point(691, 170);
+            this.lblNormalTotalWaitingPeriod.Name = "lblNormalTotalWaitingPeriod";
+            this.lblNormalTotalWaitingPeriod.Size = new System.Drawing.Size(19, 13);
+            this.lblNormalTotalWaitingPeriod.TabIndex = 12;
+            this.lblNormalTotalWaitingPeriod.Text = "00";
             // 
             // txtCarlist
             // 
@@ -155,48 +122,116 @@
             this.txtPriorityQueue.Size = new System.Drawing.Size(251, 323);
             this.txtPriorityQueue.TabIndex = 18;
             // 
-            // txtReversePriQueue
+            // lblTotalCar
             // 
-            this.txtReversePriQueue.Location = new System.Drawing.Point(564, 123);
-            this.txtReversePriQueue.Multiline = true;
-            this.txtReversePriQueue.Name = "txtReversePriQueue";
-            this.txtReversePriQueue.Size = new System.Drawing.Size(251, 323);
-            this.txtReversePriQueue.TabIndex = 19;
+            this.lblTotalCar.AutoSize = true;
+            this.lblTotalCar.Location = new System.Drawing.Point(630, 125);
+            this.lblTotalCar.Name = "lblTotalCar";
+            this.lblTotalCar.Size = new System.Drawing.Size(19, 13);
+            this.lblTotalCar.TabIndex = 21;
+            this.lblTotalCar.Text = "00";
             // 
-            // txtGain
+            // label7
             // 
-            this.txtGain.Location = new System.Drawing.Point(835, 123);
-            this.txtGain.Multiline = true;
-            this.txtGain.Name = "txtGain";
-            this.txtGain.Size = new System.Drawing.Size(251, 323);
-            this.txtGain.TabIndex = 20;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(561, 125);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Total Cars :";
             // 
-            // lblTotalCarNumber
+            // label1
             // 
-            this.lblTotalCarNumber.AutoSize = true;
-            this.lblTotalCarNumber.Location = new System.Drawing.Point(12, 464);
-            this.lblTotalCarNumber.Name = "lblTotalCarNumber";
-            this.lblTotalCarNumber.Size = new System.Drawing.Size(19, 13);
-            this.lblTotalCarNumber.TabIndex = 21;
-            this.lblTotalCarNumber.Text = "00";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(561, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "NORMAL QUEUE";
+            // 
+            // lblNormalAverageWaitingPeriod
+            // 
+            this.lblNormalAverageWaitingPeriod.AutoSize = true;
+            this.lblNormalAverageWaitingPeriod.Location = new System.Drawing.Point(691, 187);
+            this.lblNormalAverageWaitingPeriod.Name = "lblNormalAverageWaitingPeriod";
+            this.lblNormalAverageWaitingPeriod.Size = new System.Drawing.Size(19, 13);
+            this.lblNormalAverageWaitingPeriod.TabIndex = 26;
+            this.lblNormalAverageWaitingPeriod.Text = "00";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(561, 187);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(125, 13);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Average Waiting Period :";
+            // 
+            // lblPrioritizedAverageWaitingPeriod
+            // 
+            this.lblPrioritizedAverageWaitingPeriod.AutoSize = true;
+            this.lblPrioritizedAverageWaitingPeriod.Location = new System.Drawing.Point(691, 256);
+            this.lblPrioritizedAverageWaitingPeriod.Name = "lblPrioritizedAverageWaitingPeriod";
+            this.lblPrioritizedAverageWaitingPeriod.Size = new System.Drawing.Size(19, 13);
+            this.lblPrioritizedAverageWaitingPeriod.TabIndex = 31;
+            this.lblPrioritizedAverageWaitingPeriod.Text = "00";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(561, 256);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 13);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Average Waiting Period :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(561, 221);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(117, 13);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "PRIORITIZED QUEUE";
+            // 
+            // lblPrioritizedTotalWaitingPeriod
+            // 
+            this.lblPrioritizedTotalWaitingPeriod.AutoSize = true;
+            this.lblPrioritizedTotalWaitingPeriod.Location = new System.Drawing.Point(691, 239);
+            this.lblPrioritizedTotalWaitingPeriod.Name = "lblPrioritizedTotalWaitingPeriod";
+            this.lblPrioritizedTotalWaitingPeriod.Size = new System.Drawing.Size(19, 13);
+            this.lblPrioritizedTotalWaitingPeriod.TabIndex = 28;
+            this.lblPrioritizedTotalWaitingPeriod.Text = "00";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(561, 239);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(109, 13);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Total Waiting Period :";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1117, 509);
-            this.Controls.Add(this.lblTotalCarNumber);
-            this.Controls.Add(this.txtGain);
-            this.Controls.Add(this.txtReversePriQueue);
+            this.ClientSize = new System.Drawing.Size(754, 509);
+            this.Controls.Add(this.lblPrioritizedAverageWaitingPeriod);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblPrioritizedTotalWaitingPeriod);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblNormalAverageWaitingPeriod);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblTotalCar);
             this.Controls.Add(this.txtPriorityQueue);
             this.Controls.Add(this.txtCarlist);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.lblTotalPriorityQueue);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.lblTotalProcess);
+            this.Controls.Add(this.lblNormalTotalWaitingPeriod);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -216,17 +251,20 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblTotalProcess;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblTotalPriorityQueue;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblNormalTotalWaitingPeriod;
         private System.Windows.Forms.TextBox txtCarlist;
         private System.Windows.Forms.TextBox txtPriorityQueue;
-        private System.Windows.Forms.TextBox txtReversePriQueue;
-        private System.Windows.Forms.TextBox txtGain;
-        private System.Windows.Forms.Label lblTotalCarNumber;
+        private System.Windows.Forms.Label lblTotalCar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNormalAverageWaitingPeriod;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblPrioritizedAverageWaitingPeriod;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblPrioritizedTotalWaitingPeriod;
+        private System.Windows.Forms.Label label11;
     }
 }
 

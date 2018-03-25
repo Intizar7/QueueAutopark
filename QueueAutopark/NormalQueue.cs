@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace QueueAutopark
 {
     class NormalQueue : QueueCar
-    { 
-        
+    {
+
     }
 }
