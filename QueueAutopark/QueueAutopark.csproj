@@ -52,9 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IQueueCar.cs" />
+    <Compile Include="QueueCar.cs" />
+    <Compile Include="NormalQueue.cs" />
     <Compile Include="Numerator.cs" />
-    <Compile Include="PriorityQueue.cs" />
+    <Compile Include="PrioritizedQueue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

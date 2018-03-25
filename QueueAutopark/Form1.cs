@@ -17,20 +17,19 @@ namespace QueueAutopark
         {
             InitializeComponent();
         }
-       
+
         private void btnEnterCarNoEnter_Click(object sender, EventArgs e)
         {
-
+           
             App.run();
 
-            txtCarlist.Text = App.getCarListOutput();
-        
+            txtCarlist.Text = App.getNormalCarListOutput();
+            txtPriorityQueue.Text = App.getPrioritizedCarListOutput();
+
             // TODO: araç sayısını göstermek için label oluştur ve aşağıdaki sonucu oraya yazdır
             lblTotalCarNumber.Text = App.getTotalCarsOutput();
-            PriorityQueue p = new PriorityQueue();
-            txtPriorityQueue.Text = App.getCarListOutput();
+           
 
         }
-
     }
 }
